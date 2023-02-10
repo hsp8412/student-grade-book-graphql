@@ -1,0 +1,23 @@
+export const Students =[
+    {
+        id:1,
+        firstName:"Alex",
+        lastName:"White",
+        gender:"male",
+        isActive:true
+    },
+    {
+        id:2,
+        firstName:"Smith",
+        lastName:"Black",
+        gender:"male",
+        isActive:true
+    },
+    {
+        id:3,
+        firstName:"Alice",
+        lastName:"Liu",
+        gender:"female",
+        isActive:false
+    }
+]
