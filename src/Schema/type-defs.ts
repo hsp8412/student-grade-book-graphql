@@ -27,6 +27,31 @@ export const typeDefs = `#graphql
         CPSC
         SENG
     }
+
+    input CreateStudentInput{
+        firstName:String!
+        lastName:String!
+        gender:Gender = OTHERS
+        isActive: Boolean = true
+    }
+
+    input UpdateStudentInput{
+        id:ID!
+        firstName:String
+        lastName:String
+        gender:Gender
+        isActive:Boolean
+    }
+
+    input DeleteStudentInput{
+        id:ID!
+    }
+
+    type Mutation{
+        createStudent(input:CreateStudentInput!): Student!
+        updateStudent(input:UpdateStudentInput!): Student
+        deleteStudent(input:DeleteStudentInput!): Student
+    }
     
     type Query{
         students:[Student]
